@@ -28,7 +28,7 @@ Example:
 
 ```
 {
-  #  use shell-like (or ruby-like) comments
+  #  use shell-like comments
 
   listName: "Sesame Street Monsters"   # note: comments after key-value pairs are optional  
   content: [
@@ -84,7 +84,6 @@ What's missing?
 - `#`-comments 
 - optional commas for object key-value pairs
 - optional commas for array items
-- single quoted strings
 
 
 ### HJSON
