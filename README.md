@@ -1,5 +1,5 @@
 
-Comments, unquoted keys, multi-line strings, trailing commas, optional commas, and more.
+Comments • Unquoted keys • Multi-line strings • Trailing commas • Optional commas • and more.
 
 # JSON with Extensions (JSONX) or JSON v1.1 (a.k.a. JSON11 or JSON XI or JSON II) 
 
