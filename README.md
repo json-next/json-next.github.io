@@ -93,13 +93,13 @@ HJSON is a close relative.
 
 What's different?
 
-- HJSON use `"""` triple double quoted strings for multi-line strings; JSON v11 uses backticks for multi-line strings (like ES6)
-- HJSON unquoted strings allow spaces and more; JSON v11 only allows identifiers for unquoted strings
+- HJSON uses `"""` triple double quoted strings for multi-line strings; JSON v11 uses backticks for multi-line strings (like ES6)
+- HJSON unquoted strings allow spaces and more (until the end of line); JSON v11 only allows identifiers for unquoted strings
 
 
 ### HanSON
 
-HanSON is a subst. JSON v11 includes all HanSON extensions ;-)
+HanSON is a subset. JSON v11 includes all HanSON extensions ;-)
 
 ### SON
 
