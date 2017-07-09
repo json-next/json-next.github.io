@@ -69,6 +69,43 @@ same as "vanilla" ye old' JSON:
 
 **Ruby**
 
+- `json-next` library (github: [datatxt/json-next](https://github.com/datatxt/json-next))
+
+
+
+## What's different?
+
+### JSON5
+
+JSON5 is a close relative. 
+
+What's missing?
+
+- `#`-comments 
+- optional commas for object key-value pairs
+- optional commas for array items
+- single quoted strings
+
+
+### HJSON
+
+HJSON is a close relative.
+
+What's different?
+
+- HJSON use `"""` triple double quoted strings for multi-line strings; JSON v11 uses backticks for multi-line strings (like ES6)
+- HJSON unquoted strings allow spaces and more; JSON v11 only allows identifiers for unquoted strings
+
+
+### HanSON
+
+HanSON is a subst. JSON v11 includes all HanSON extensions ;-)
+
+### SON
+
+SON is a subset. JSON v11 includes all SON extensions ;-)
+
+
 
 
 
