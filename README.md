@@ -65,6 +65,71 @@ same as "vanilla" ye old' JSON:
 ```
 
 
+## Examples
+
+_Real-World Examples_
+
+[package.json](#package-json) •
+[feed.json](#feed-json) •
+[schema.json](#schema-json)
+
+
+### package.json
+
+
+```
+{
+  name        : 'jquery'
+  title       : 'jQuery'
+  description : 'JavaScript library for DOM operations'
+  version     : '3.2.2-pre'
+  main        : 'dist/jquery.js'
+  homepage    : 'https://jquery.com'
+  author      : {
+    name : 'JS Foundation and other contributors'
+    url  : 'https://github.com/jquery/jquery/blob/master/AUTHORS.txt'
+  }
+  repository  : {
+    type : 'git'
+    url  : 'https://github.com/jquery/jquery.git'
+  }
+  keywords    : [ 'jquery' 'javascript' 'browser' 'library' ]
+  bugs        : {
+    url  : 'https://github.com/jquery/jquery/issues'
+  }
+  license     : 'MIT'
+  dependencies    : {}
+  devDependencies : {
+    babel-preset-es2015  :  '6.24.1'
+    commitplease         :  '2.7.10'
+    core-js              :  '2.4.1'
+    cross-spawn          :  '5.1.0'
+    eslint-config-jquery :  '1.0.1'
+    grunt                :  '1.0.1'
+    grunt-babel          :  '6.0.0'
+    grunt-cli            :  '1.2.0'
+    ...
+  }
+  scripts : {
+    build     : 'npm install && grunt'
+    start     : 'grunt watch'
+    test      : 'grunt && grunt test:slow'
+    precommit : 'grunt lint:newer'
+    commitmsg : 'node node_modules/commitplease'
+  }
+  commitplease : {
+    nohook : true
+    ...
+  }
+}
+```
+
+(Original Source: [jquery/jquery/package.json](https://github.com/jquery/jquery/blob/master/package.json))
+
+
+
+
+
 ## Readers / Parsers
 
 **Ruby**
