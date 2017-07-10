@@ -6,6 +6,14 @@ Comments • Unquoted keys • Multi-line strings • Trailing commas • Option
 _JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
 
 
+**Q: What's JSON with Extensions? Why? Why?**
+
+JSON with Extensions (JSONX) is a new JSON format evolved for humans, that is,
+the goal of the JSON extensions is making writing and reading JSON easier for you (dear human). 
+JSON is no longer used as a machine-to-machine data interchange format only, thus, let's make it more human-friendly.
+
+
+
 JSON v1.1 includes all JSON extensions from HanSON (JSON for Humans):
 
 - quotes for strings are optional if they follow JavaScript identifier rules.
