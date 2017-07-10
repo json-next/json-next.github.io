@@ -314,8 +314,14 @@ _Tabular Data Package - Frictionless Data_
 
 **Ruby**
 
-- `json-next` library (github: [datatxt/json-next](https://github.com/datatxt/json-next))
+- `json-next` library (github: [datatxt/json-next](https://github.com/datatxt/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
 
+
+
+## Tests, Tests, Tests
+
+
+"Official" Test Suite (github: [jsonx @ datatxt/json-next-tests](https://github.com/datatxt/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
 
 
 ## What's different?
@@ -330,6 +336,11 @@ What's missing?
 - optional commas for object key-value pairs
 - optional commas for array items
 
+What's different?
+
+- allows dash (`-`) in javascript identifiers e.g. `core-js`, `babel-preset-es2015`, `eslint-config-jquery` and others
+- allows underscores (`_`) in numbers e.g. `1_000_000` (instead of `10000000`)  -- FUTURE ADDITION
+
 
 ### HJSON
 
@@ -339,6 +350,10 @@ What's different?
 
 - HJSON uses `"""` triple double quoted strings for multi-line strings; JSON v11 uses backticks for multi-line strings (like ES6)
 - HJSON unquoted strings allow spaces and more (until the end of line); JSON v11 only allows identifiers for unquoted strings
+
+
+Note:  JSONX with Extension will add `"""` and `'''` as (alternative) multi-line strings -- FUTURE ADDITION
+
 
 
 ### HanSON
