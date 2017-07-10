@@ -31,6 +31,11 @@ Plus all JSON extensions from SON (Simple Object Notation):
 - comma after an object key-value pair is optional
 - comma after an array item is optional
 
+Plus some more extra JSON extensions:
+
+- unquoted strings following the JavaScript identifier rules can use the dash (`-`) too e.g. allows common keys such as `core-js`, `babel-preset-es2015`, `eslint-config-jquery` and others
+
+
 
 Example:
 
