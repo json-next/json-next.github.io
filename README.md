@@ -312,9 +312,12 @@ _Tabular Data Package - Frictionless Data_
 
 ## Readers / Parsers
 
-**Ruby**
+[Ruby](#ruby)
 
-- `json-next` library (github: [datatxt/json-next](https://github.com/datatxt/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
+### Ruby
+
+**`json-next`** library (github: [datatxt/json-next](https://github.com/datatxt/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
+
 
 
 
@@ -324,7 +327,13 @@ _Tabular Data Package - Frictionless Data_
 "Official" Test Suite (github: [jsonx @ datatxt/json-next-tests](https://github.com/datatxt/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
 
 
+
 ## What's different?
+
+[JSON5](#json5) •
+[HJSON](#hjson) •
+[HanSON](#hanson) •
+[SON](#son)
 
 ### JSON5
 
