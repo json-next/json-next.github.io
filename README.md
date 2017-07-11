@@ -151,52 +151,50 @@ _Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
 }
 ```
 
-**"Alternate" Equals (=) Variant**
+**"Alternate" Equals (=) Variant with Auto-Wrap**
 
 ``` text
-{
-  name        =  jquery
-  title       =  jQuery
-  description = 'JavaScript library for DOM operations'
-  version     =  3.2.2-pre
-  main        =  dist/jquery.js
-  homepage    =  https://jquery.com
-  author      = {
-    name = 'JS Foundation and other contributors'
-    url  = https://github.com/jquery/jquery/blob/master/AUTHORS.txt
-  }
-  repository  = {
-    type = git
-    url  = https://github.com/jquery/jquery.git
-  }
-  keywords    = [ jquery javascript browser library ]
-  bugs        = {
-    url  = https://github.com/jquery/jquery/issues
-  }
-  license     = MIT
-  dependencies    = {}
-  devDependencies = {
-    babel-preset-es2015  =  6.24.1
-    commitplease         =  2.7.10
-    core-js              =  2.4.1
-    cross-spawn          =  5.1.0
-    eslint-config-jquery =  1.0.1
-    grunt                =  1.0.1
-    grunt-babel          =  6.0.0
-    grunt-cli            =  1.2.0
-    ...
-  }
-  scripts = {
-    build     = 'npm install && grunt'
-    start     = 'grunt watch'
-    test      = 'grunt && grunt test:slow'
-    precommit = 'grunt lint:newer'
-    commitmsg = 'node node_modules/commitplease'
-  }
-  commitplease = {
-    nohook = true
-    ...
-  }
+name        =  jquery
+title       =  jQuery
+description = 'JavaScript library for DOM operations'
+version     =  3.2.2-pre
+main        =  dist/jquery.js
+homepage    =  https://jquery.com
+author      = {
+  name = 'JS Foundation and other contributors'
+  url  = https://github.com/jquery/jquery/blob/master/AUTHORS.txt
+}
+repository  = {
+  type = git
+  url  = https://github.com/jquery/jquery.git
+}
+keywords    = [ jquery javascript browser library ]
+bugs        = {
+  url  = https://github.com/jquery/jquery/issues
+}
+license     = MIT
+dependencies    = {}
+devDependencies = {
+  babel-preset-es2015  =  6.24.1
+  commitplease         =  2.7.10
+  core-js              =  2.4.1
+  cross-spawn          =  5.1.0
+  eslint-config-jquery =  1.0.1
+  grunt                =  1.0.1
+  grunt-babel          =  6.0.0
+  grunt-cli            =  1.2.0
+  ...
+}
+scripts = {
+  build     = 'npm install && grunt'
+  start     = 'grunt watch'
+  test      = 'grunt && grunt test:slow'
+  precommit = 'grunt lint:newer'
+  commitmsg = 'node node_modules/commitplease'
+}
+commitplease = {
+  nohook = true
+  ...
 }
 ```
 
@@ -230,7 +228,7 @@ _Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
 }
 ```
 
-**Simple - "Alternate" Equals (=) Variant w/ Auto-Wrap**
+**Simple - "Alternate" Equals (=) Variant with (<..-..>) Shortcuts and Auto-Wrap**
 
 ``` text
 version       = https://jsonfeed.org/version/1
@@ -290,7 +288,7 @@ items         =
 ```
 
 
-**Podcast - "Alternate" Equals (=) Variant w/ Auto-Wrap**
+**Podcast - "Alternate" Equals (=) Variant with (<..-..>) Shortcuts and Auto-Wrap**
 
 ``` text
 version         =  https://jsonfeed.org/version/1
@@ -330,54 +328,101 @@ items           =
 
 _Tabular Data Package - Frictionless Data_
 
+**"Classic" Colon (:) Variant**
 
 ``` text
 {
-  name      : 's-and-p-500-companies'
+  name      :  s-and-p-500-companies
   title     : 'S&P 500 Companies with Financial Information'
-  license   : 'PDDL-1.0'
+  license   :  PDDL-1.0
   resources : [
     {
-      name: 'constituents'
-      path: 'data/constituents.csv'
-      format: 'csv'
-      mediatype: 'text/csv'
+      name:  constituents
+      path: data/constituents.csv
+      format: csv
+      mediatype: text/csv
       schema: {
         fields: [
-          { name: 'Symbol'  type: 'string'  description: '' }
-          { name: 'Name'    type: 'string'  description: '' }
-          { name: 'Sector'  type: 'string'  description: '' }
+          { name: 'Symbol'  type: string  description: '' }
+          { name: 'Name'    type: string  description: '' }
+          { name: 'Sector'  type: string  description: '' }
         ]
       }
     }
     {
-      name: 'constituents-financials'
-      path: 'data/constituents-financials.csv'
-      format: 'csv'
-      mediatype: 'text/csv'
+      name: constituents-financials
+      path: data/constituents-financials.csv
+      format: csv
+      mediatype: text/csv
       schema: {
         fields: [
-          { name: 'Symbol'          type: 'string'  description: '' }
-          { name: 'Name'            type: 'string'  description: '' }
-          { name: 'Sector'          type: 'string'  description: '' }
-          { name: 'Price'           type: 'number'  description: '' }
-          { name: 'Dividend Yield'  type: 'number'  description: '' }
-          { name: 'Price/Earnings'  type: 'number'  description: '' }
-          { name: 'Earnings/Share'  type: 'number'  description: '' }
-          { name: 'Book Value'      type: 'number'  description: '' }
-          { name: '52 week low'     type: 'number'  description: '' }
-          { name: '52 week high'    type: 'number'  description: '' }
-          { name: 'Market Cap'      type: 'number'  description: '' }
-          { name: 'EBITDA'          type: 'number'  description: '' }
-          { name: 'Price/Sales'     type: 'number'  description: '' }
-          { name: 'Price/Book'      type: 'number'  description: '' }
-          { name: 'SEC Filings'     type: 'string'  format: 'url'  description: '' }
+          { name: 'Symbol'          type: string  description: '' }
+          { name: 'Name'            type: string  description: '' }
+          { name: 'Sector'          type: string  description: '' }
+          { name: 'Price'           type: number  description: '' }
+          { name: 'Dividend Yield'  type: number  description: '' }
+          { name: 'Price/Earnings'  type: number  description: '' }
+          { name: 'Earnings/Share'  type: number  description: '' }
+          { name: 'Book Value'      type: number  description: '' }
+          { name: '52 week low'     type: number  description: '' }
+          { name: '52 week high'    type: number  description: '' }
+          { name: 'Market Cap'      type: number  description: '' }
+          { name: 'EBITDA'          type: number  description: '' }
+          { name: 'Price/Sales'     type: number  description: '' }
+          { name: 'Price/Book'      type: number  description: '' }
+          { name: 'SEC Filings'     type: string  format: url  description: '' }
         ]
       }
     }
   ]
 }
 ```
+
+**"Alternate" Equals (=) Variant with (<..+..>) Shortcuts and Auto-Wrap**
+
+``` text
+name      =  s-and-p-500-companies
+title     = 'S&P 500 Companies with Financial Information'
+license   =  PDDL-1.0
+resources = 
+< name:  constituents
+  path: data/constituents.csv
+  format: csv
+  mediatype: text/csv
+  schema: {
+    fields: <
+               name: 'Symbol'  type: string  description: '' 
+             + name: 'Name'    type: string  description: '' 
+             + name: 'Sector'  type: string  description: '' 
+            >
+  }
+  -
+  name: constituents-financials
+  path: data/constituents-financials.csv
+  format: csv
+  mediatype: text/csv
+  schema: {
+    fields: <
+               name: 'Symbol'          type: string  description: ''
+             + name: 'Name'            type: string  description: '' 
+             + name: 'Sector'          type: string  description: ''
+             + name: 'Price'           type: number  description: '' 
+             + name: 'Dividend Yield'  type: number  description: '' 
+             + name: 'Price/Earnings'  type: number  description: '' 
+             + name: 'Earnings/Share'  type: number  description: '' 
+             + name: 'Book Value'      type: number  description: '' 
+             + name: '52 week low'     type: number  description: '' 
+             + name: '52 week high'    type: number  description: '' 
+             + name: 'Market Cap'      type: number  description: '' 
+             + name: 'EBITDA'          type: number  description: '' 
+             + name: 'Price/Sales'     type: number  description: '' 
+             + name: 'Price/Book'      type: number  description: '' 
+             + name: 'SEC Filings'     type: string  format: url  description: '' 
+           >
+  }
+>
+```
+
 
 (Original Source: [datasets/s-and-p-500-companies/datapackage.json](https://github.com/datasets/s-and-p-500-companies/blob/master/datapackage.json))
 
