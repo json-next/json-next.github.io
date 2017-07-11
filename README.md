@@ -429,41 +429,78 @@ resources =
 
 ### geojson
 
+**"Classic" Colon (:) Variant**
+
 ``` text
 {
-  type: 'FeatureCollection'
+  type: FeatureCollection
   features: [
   {
-        type: 'Feature'
-        geometry: {  type: 'Point'  coordinates: [ 16.4780312  48.1397436 ]  }
+        type: Feature
+        geometry: {  type: Point  coordinates: [ 16.4780312  48.1397436 ]  }
         properties: {
           title        : 'Brauerei Schwechat (Brau Union)'
           description  : '2320 Schwechat // Mautner Markhof-Straße 11'
           city         : 'Schwechat'
           state        : 'Niederösterreich'
-          web          : 'www.schwechater.at'
+          web          :  www.schwechater.at
           type         : 'berwery (l)'
           marker-color : '#ff0000'
-          marker-size  : 'large'
+          marker-size  :  large
         }
   }
   {
-        type: 'Feature'
-        geometry: {  type: 'Point'  coordinates: [ 16.3725042  48.2083537 ]  }
+        type: Feature
+        geometry: {  type: Point  coordinates: [ 16.3725042  48.2083537 ]  }
         properties: {
           title        : '1516 Brewing Company'
           description  : '1010 Wien // Krugerstraße 18/Schwarzenbergstraße 2'
           city         : 'Wien'
           state        : 'Wien'
-          web          : 'www.1516brewingcompany.com'
+          web          :  www.1516brewingcompany.com
           type         : 'brewpub'
           marker-color : '#ffa500'
-          marker-size  : 'small'
+          marker-size  :  small
        }
   }
   ...
   ]
 }  
+```
+
+
+**"Alternate" Equals (=) Variant with (<..-..>) Shortcuts and Auto-Wrap**
+
+``` text
+type     = FeatureCollection
+features =
+< type     = Feature
+  geometry = { type = Point  coordinates = [ 16.4780312  48.1397436 ]  }
+  properties = {
+    title        = 'Brauerei Schwechat (Brau Union)'
+    description  = '2320 Schwechat // Mautner Markhof-Straße 11'
+    city         = 'Schwechat'
+    state        = 'Niederösterreich'
+    web          =  www.schwechater.at
+    type         = 'berwery (l)'
+    marker-color = '#ff0000'
+    marker-size  =  large
+  }
+  -
+  type     = Feature
+  geometry = { type = Point  coordinates = [ 16.3725042  48.2083537 ]  }
+  properties = {
+    title        = '1516 Brewing Company'
+    description  = '1010 Wien // Krugerstraße 18/Schwarzenbergstraße 2'
+    city         = 'Wien'
+    state        = 'Wien'
+    web          =  www.1516brewingcompany.com
+    type         = 'brewpub'
+    marker-color = '#ffa500'
+    marker-size  =  small
+  }
+  ...
+>  
 ```
 
 (Original Source: [beerbook/maps/at/at.geojson](https://github.com/beerbook/maps/blob/master/at/at.geojson))
