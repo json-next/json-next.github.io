@@ -72,7 +72,7 @@ He's mostly retired today.`
 }
 ```
 
-same as "vanilla" ye old' JSON:
+same ye old' "vanilla" JSON:
 
 ``` json
 {
@@ -102,37 +102,39 @@ _Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
 ### package.json
 
 
+**"Classic" Colon (:) Variant**
+
 ``` text
 {
-  name        : 'jquery'
-  title       : 'jQuery'
+  name        :  jquery
+  title       :  jQuery
   description : 'JavaScript library for DOM operations'
-  version     : '3.2.2-pre'
-  main        : 'dist/jquery.js'
+  version     :  3.2.2-pre
+  main        :  dist/jquery.js
   homepage    : 'https://jquery.com'
   author      : {
     name : 'JS Foundation and other contributors'
     url  : 'https://github.com/jquery/jquery/blob/master/AUTHORS.txt'
   }
   repository  : {
-    type : 'git'
+    type :  git
     url  : 'https://github.com/jquery/jquery.git'
   }
-  keywords    : [ 'jquery' 'javascript' 'browser' 'library' ]
+  keywords    : [ jquery javascript browser library ]
   bugs        : {
     url  : 'https://github.com/jquery/jquery/issues'
   }
-  license     : 'MIT'
+  license     : MIT
   dependencies    : {}
   devDependencies : {
-    babel-preset-es2015  :  '6.24.1'
-    commitplease         :  '2.7.10'
-    core-js              :  '2.4.1'
-    cross-spawn          :  '5.1.0'
-    eslint-config-jquery :  '1.0.1'
-    grunt                :  '1.0.1'
-    grunt-babel          :  '6.0.0'
-    grunt-cli            :  '1.2.0'
+    babel-preset-es2015  :  6.24.1
+    commitplease         :  2.7.10
+    core-js              :  2.4.1
+    cross-spawn          :  5.1.0
+    eslint-config-jquery :  1.0.1
+    grunt                :  1.0.1
+    grunt-babel          :  6.0.0
+    grunt-cli            :  1.2.0
     ...
   }
   scripts : {
@@ -149,8 +151,56 @@ _Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
 }
 ```
 
-(Original Source: [jquery/jquery/package.json](https://github.com/jquery/jquery/blob/master/package.json))
+**"Alternate" Equals (=) Variant**
 
+``` text
+{
+  name        =  jquery
+  title       =  jQuery
+  description = 'JavaScript library for DOM operations'
+  version     =  3.2.2-pre
+  main        =  dist/jquery.js
+  homepage    =  https://jquery.com
+  author      = {
+    name = 'JS Foundation and other contributors'
+    url  = https://github.com/jquery/jquery/blob/master/AUTHORS.txt
+  }
+  repository  = {
+    type = git
+    url  = https://github.com/jquery/jquery.git
+  }
+  keywords    = [ jquery javascript browser library ]
+  bugs        = {
+    url  = https://github.com/jquery/jquery/issues
+  }
+  license     = MIT
+  dependencies    = {}
+  devDependencies = {
+    babel-preset-es2015  =  6.24.1
+    commitplease         =  2.7.10
+    core-js              =  2.4.1
+    cross-spawn          =  5.1.0
+    eslint-config-jquery =  1.0.1
+    grunt                =  1.0.1
+    grunt-babel          =  6.0.0
+    grunt-cli            =  1.2.0
+    ...
+  }
+  scripts = {
+    build     = 'npm install && grunt'
+    start     = 'grunt watch'
+    test      = 'grunt && grunt test:slow'
+    precommit = 'grunt lint:newer'
+    commitmsg = 'node node_modules/commitplease'
+  }
+  commitplease = {
+    nohook = true
+    ...
+  }
+}
+```
+
+(Original Source: [jquery/jquery/package.json](https://github.com/jquery/jquery/blob/master/package.json))
 
 
 ### feed.json
