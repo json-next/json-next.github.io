@@ -2,7 +2,7 @@
 [JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/jsonii)
 
 
-Comments • Unquoted keys • Multi-line strings • Trailing commas • Optional commas • `<..-..>` shortcuts • `=` is the new `:` • and more
+Comments • Unquoted keys • Multi-line strings • Trailing commas • Optional commas • `<..-..>` shortcuts • Optional `=` is the new `:` • Auto-wrapped objects • and more
 
 
 # JSON: 1.1 # JSON with Extensions (JSONX) 
