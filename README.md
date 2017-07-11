@@ -50,7 +50,7 @@ Plus some more extra JSON extensions:
 
 Example:
 
-```
+``` text
 {
   #  use shell-like comments
 
@@ -102,7 +102,7 @@ _Real-World Examples - Code Libraries, Web Feeds, Tables & Schemas, Map Features
 ### package.json
 
 
-```
+``` text
 {
   name        : 'jquery'
   title       : 'jQuery'
@@ -159,7 +159,7 @@ _Real-World Examples - Code Libraries, Web Feeds, Tables & Schemas, Map Features
 
 **Simple**
 
-```
+``` text
 {
   version       : 'https://jsonfeed.org/version/1'
   title         : 'My Example Feed'
@@ -183,7 +183,7 @@ _Real-World Examples - Code Libraries, Web Feeds, Tables & Schemas, Map Features
 
 **Podcast**
 
-```
+``` text
 {
     version         : 'https://jsonfeed.org/version/1'
     user_comment    : 'This is a podcast feed. You can add this feed to your podcast client using the following URL: http://therecord.co/feed.json'
@@ -227,7 +227,7 @@ _Real-World Examples - Code Libraries, Web Feeds, Tables & Schemas, Map Features
 _Tabular Data Package - Frictionless Data_
 
 
-```
+``` text
 {
   name      : 's-and-p-500-companies'
   title     : 'S&P 500 Companies with Financial Information'
@@ -280,7 +280,7 @@ _Tabular Data Package - Frictionless Data_
 
 ### geojson
 
-```
+``` text
 {
   type: 'FeatureCollection'
   features: [
@@ -327,7 +327,7 @@ _Tabular Data Package - Frictionless Data_
 
 ### Ruby
 
-**`json-next`** library (github: [datatxt/json-next](https://github.com/datatxt/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
+**`json-next`** library (github: [jsonii/json-next](https://github.com/jsonii/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
 
 
 
@@ -335,7 +335,7 @@ _Tabular Data Package - Frictionless Data_
 ## Tests, Tests, Tests
 
 
-"Official" Test Suite (github: [jsonx @ datatxt/json-next-tests](https://github.com/datatxt/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
+"Official" Test Suite (github: [jsonx @ jsonii/json-next-tests](https://github.com/jsonii/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
 
 
 
@@ -355,6 +355,7 @@ What's missing?
 - `#`-comments 
 - optional commas for object key-value pairs
 - optional commas for array items
+- mulit-line strings with backticks (ES6-like)
 
 What's different?
 
@@ -390,7 +391,7 @@ SON is a subset. JSON v11 includes all SON extensions ;-)
 
 ## More JSON Formats
 
-See the [Awesome JSON (What's Next?)](https://github.com/datatxt/awesome-json-next) collection / page.
+See the [Awesome JSON (What's Next?)](https://github.com/jsonii/awesome-json-next) collection / page.
 
 
 ## Meta
