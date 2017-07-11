@@ -1,17 +1,28 @@
 
+[JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/jsonii)
+
+
 Comments • Unquoted keys • Multi-line strings • Trailing commas • Optional commas • and more
 
-# JSON with Extensions (JSONX) or JSON v1.1 (a.k.a. JSON11 or JSON XI or JSON II) 
+# JSON: 1.1 # JSON with Extensions (JSONX) 
 
-_JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
+_JSON v1.1 - JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
 
 
-**Q: What's JSON with Extensions? Why? Why?**
+## Welcome
 
-JSON with Extensions (JSONX) is a new JSON format evolved for humans, that is,
+_What's JSON with Extensions? Why? Why?_
+
+JSON with Extensions (JSONX) - also known as JSON: 1.1, JSON v1.1, JSON11, JSON XI, or JSON II - is a 
+new JSON format evolved for humans, that is,
 the goal of the JSON extensions is making writing and reading JSON easier for you (dear human). 
 JSON is no longer used as a machine-to-machine data interchange format only, thus, let's make it more human-friendly.
 
+
+
+## Spec
+
+_JSON v1.1 Format Specification in English_
 
 
 JSON v1.1 includes all JSON extensions from HanSON (JSON for Humans):
