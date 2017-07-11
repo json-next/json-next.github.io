@@ -385,39 +385,39 @@ name      =  s-and-p-500-companies
 title     = 'S&P 500 Companies with Financial Information'
 license   =  PDDL-1.0
 resources = 
-< name:  constituents
-  path: data/constituents.csv
-  format: csv
-  mediatype: text/csv
-  schema: {
-    fields: <
-               name: 'Symbol'  type: string  description: '' 
-             + name: 'Name'    type: string  description: '' 
-             + name: 'Sector'  type: string  description: '' 
+< name =  constituents
+  path = data/constituents.csv
+  format = csv
+  mediatype = text/csv
+  schema = {
+    fields = <
+               name = 'Symbol'  type = string  description = '' 
+             + name = 'Name'    type = string  description = '' 
+             + name = 'Sector'  type = string  description = '' 
             >
   }
   -
-  name: constituents-financials
-  path: data/constituents-financials.csv
-  format: csv
-  mediatype: text/csv
-  schema: {
-    fields: <
-               name: 'Symbol'          type: string  description: ''
-             + name: 'Name'            type: string  description: '' 
-             + name: 'Sector'          type: string  description: ''
-             + name: 'Price'           type: number  description: '' 
-             + name: 'Dividend Yield'  type: number  description: '' 
-             + name: 'Price/Earnings'  type: number  description: '' 
-             + name: 'Earnings/Share'  type: number  description: '' 
-             + name: 'Book Value'      type: number  description: '' 
-             + name: '52 week low'     type: number  description: '' 
-             + name: '52 week high'    type: number  description: '' 
-             + name: 'Market Cap'      type: number  description: '' 
-             + name: 'EBITDA'          type: number  description: '' 
-             + name: 'Price/Sales'     type: number  description: '' 
-             + name: 'Price/Book'      type: number  description: '' 
-             + name: 'SEC Filings'     type: string  format: url  description: '' 
+  name = constituents-financials
+  path = data/constituents-financials.csv
+  format = csv
+  mediatype = text/csv
+  schema = {
+    fields = <
+               name = 'Symbol'          type = string  description = ''
+             + name = 'Name'            type = string  description = '' 
+             + name = 'Sector'          type = string  description = ''
+             + name = 'Price'           type = number  description = '' 
+             + name = 'Dividend Yield'  type = number  description = '' 
+             + name = 'Price/Earnings'  type = number  description = '' 
+             + name = 'Earnings/Share'  type = number  description = '' 
+             + name = 'Book Value'      type = number  description = '' 
+             + name = '52 week low'     type = number  description = '' 
+             + name = '52 week high'    type = number  description = '' 
+             + name = 'Market Cap'      type = number  description = '' 
+             + name = 'EBITDA'          type = number  description = '' 
+             + name = 'Price/Sales'     type = number  description = '' 
+             + name = 'Price/Book'      type = number  description = '' 
+             + name = 'SEC Filings'     type = string  format = url  description = '' 
            >
   }
 >
