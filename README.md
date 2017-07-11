@@ -89,9 +89,9 @@ same as "vanilla" ye old' JSON:
 ```
 
 
-## Examples
+## Real-World Examples
 
-_Real-World Examples - Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
+_Code Libraries, Web Feeds, Tables & Schemas, Map Features, & More_
 
 [package.json](#packagejson) •
 [feed.json](#feedjson) •
