@@ -512,7 +512,7 @@ features =
 
 ### Ruby
 
-**`json-next`** library (github: [jsonii/json-next](https://github.com/jsonii/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
+**`json-next`** library (github: [json-next/json-next](https://github.com/json-next/json-next)) - Use `JSONX.convert` or `JSONXI.convert` or `JSON11.convert` to convert to plain "vanilla" ye old' JSON. Use `JSONX.parse` or `JSONXI.parse` to convert to hash, array, etc. Note: `JSONX.parse` is the same as `JSON.parse( JSONX.convert( text ))`
 
 
 
@@ -520,7 +520,7 @@ features =
 ## Tests, Tests, Tests
 
 
-"Official" Test Suite (github: [jsonx @ jsonii/json-next-tests](https://github.com/jsonii/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
+"Official" Test Suite (github: [jsonx @ json-next/json-next-tests](https://github.com/json-next/json-next-tests/tree/master/jsonx))  - includes tests for package.json, feed.json, datapackage.json, geojson, and more
 
 
 
@@ -576,7 +576,7 @@ SON is a subset. JSON v11 includes all SON extensions ;-)
 
 ## More JSON Formats
 
-See the [Awesome JSON (What's Next?)](https://github.com/jsonii/awesome-json-next) collection / page.
+See the [Awesome JSON (What's Next?)](https://github.com/json-next/awesome-json-next) collection / page.
 
 
 ## Meta
