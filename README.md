@@ -1,5 +1,5 @@
 
-[JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/jsonii)
+[JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/json-next)
 
 
 Comments • Unquoted strings • Multi-line strings • Folded strings • Trailing commas • Optional commas • `<..-..>` shortcuts • Optional `=` is the new `:` • Auto-wrapped objects • and more
