@@ -1,13 +1,16 @@
+# JSON: 1.1 # JSON with Extensions (JSONX)
 
-[JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/json-next)
+_JSON v1.1 - JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
 
 
 Comments • Unquoted strings • Multi-line strings • Folded strings • Trailing commas • Optional commas • `<..-..>` shortcuts • Optional `=` is the new `:` • Auto-wrapped objects • and more
 
 
-# JSON: 1.1 # JSON with Extensions (JSONX) 
 
-_JSON v1.1 - JSON Evolved for Humans - Easy-to-Write, Easy-to-Read_
+<!--
+    todo: add back github banner
+    [JSON: 1.1 # JSON with Extensions @ GitHub](https://github.com/json-next)
+-->
 
 
 ## Welcome
